@@ -32,6 +32,18 @@ namespace Test {
                 return result;
             }
 
+            // Para ponerle un valor default a un parametro, en este caso, y
+            static int Pow(int x, int y = 2) {
+                Console.Write("Hola");
+            }
+
+            // Mandar los parametros en un orden distinto al de la firma del metodo
+            static int Area (int h, int w){
+                return 10;
+            }
+
+            int res = Area(w: 5, h:8); // Lo mando con los nombres de los parametros
+
 
 
 
